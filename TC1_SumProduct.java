@@ -1,4 +1,4 @@
-public class SumProduct{
+public class TC1_SumProduct{
 
     public static int sum(int[] arr){
         int total = 0;
@@ -39,3 +39,6 @@ public class SumProduct{
     }
 
 }
+
+// Time Complexity - O(n)
+// Space Complexity - O(1) when array used still O(1) because only 2 elements in array Sum and Product
