@@ -6,6 +6,10 @@ public class bestScore {
     
     public static int[] findTopTwoScores(int[] array){
 
+        if(array.length<2){
+            return array;
+        }
+
         int[] newArr = new int[2];
         int topScore = Integer.MIN_VALUE;
         int secTopScore = Integer.MIN_VALUE;
@@ -13,7 +17,6 @@ public class bestScore {
         // for(int i=0;i<array.length;i++){
         //     if(array[i]>topScore){
         //         topScore=array[i];
-        //         secTopScore=topScore;
         //     }
         // }
         
@@ -23,9 +26,7 @@ public class bestScore {
         //     }
         // }
 
-        if(array.length<2){
-            return array;
-        }
+        
         
         for(int i=0;i<array.length;i++){
             if (array[i]>topScore){
