@@ -23,10 +23,29 @@ public class sumDiagonal {
 
     }
 
+    public static boolean isSquare(int[][] arr){
+
+        int row = arr.length;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i].length!=row){
+                return false;
+            }
+        }
+
+        return true;
+
+    }
+
     public static void main(String[] args) {
-        int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
-        int result = sumDiagonalElements(arr);
-        System.out.println(result);
+        int[][] arr = {{1,2,3},{4,5,6}};
+        if(isSquare(arr)){
+            int result = sumDiagonalElements(arr);
+            System.out.println(result);   
+        } else{
+            System.out.println("Not a square 2-d array");
+
+        }
+
 
     }
     

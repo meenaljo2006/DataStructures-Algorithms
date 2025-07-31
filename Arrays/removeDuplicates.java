@@ -22,11 +22,39 @@ public class removeDuplicates {
         
     }
 
+    static int[] removeDuplicates(int[]arr){
+         
+        int[] newArr = new int[arr.length];
+        int index=0;
+        newArr[index] = arr[0];
+        for(int i=1;i<arr.length;i++){
+            int found =0;
+            int k=index;
+            while(k>=0){
+                if(arr[i]==newArr[k]){
+                    found=1;
+                    break;
+                }
+                k--;
+            }
+
+            if(found==0){
+                index++;
+                newArr[index]=arr[i];
+            }  
+        }
+
+        return Arrays.copyOf(newArr, index+1);
+
+    }
+
+
     public static void main(String[] args) {
         
         int[] arr = {1, 1, 2, 2, 3, 4, 5};
         int []result = removeDup(arr);
-        System.out.println(Arrays.toString(result));
+        int[] arr2 = {3,1,2,1,3,2};
+        System.out.println(Arrays.toString(removeDuplicates(arr2)));
     }
     
 }
