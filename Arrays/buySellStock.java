@@ -5,8 +5,8 @@ public class buySellStock {
     static int maxProfit(int[] prices){
 
         int maxProfit=0;
-        int buyDay = 0;
-        int sellDay = 0;
+        // int buyDay = 0;
+        // int sellDay = 0;
 
         // for(int i=1;i<prices.length;i++){
         //     for(int j=i+1;j<prices.length;j++){
@@ -46,6 +46,7 @@ public class buySellStock {
         
         int[] price1 = {7,1,5,3,6,4};
         int[] price2 = {7,6,4,3,1};
+        System.out.println(maxProfit(price1));
         System.out.println(maxProfit(price2));
 
 
