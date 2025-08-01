@@ -56,4 +56,4 @@ public class buySellStock {
 }
 
 //TC= O(N^2) after that used min so far approach and tc = O(n)
-//SC =O
+//SC =O(1)
