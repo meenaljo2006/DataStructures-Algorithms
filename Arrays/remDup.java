@@ -40,7 +40,7 @@ public class remDup {
                 count++;
 
                 int k=i+1;
-                while(k!=j && j<arr.length){
+                while(k!=j){
                     arr[k]=arr[j];
                     k++;
                 }
