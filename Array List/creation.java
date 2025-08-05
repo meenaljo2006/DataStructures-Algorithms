@@ -54,9 +54,11 @@ public class creation {
 
         System.out.println(numbers.indexOf(20));
         System.out.println(numbers.indexOf(66));
+        System.out.println(names.indexOf("dhruv"));
 
         System.out.println(numbers.contains(3));
         System.out.println(numbers.contains(6));
+        System.out.println(names.contains("dhruv"));
 
         //deleting elts
 
