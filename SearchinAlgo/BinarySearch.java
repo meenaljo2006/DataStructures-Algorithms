@@ -33,8 +33,7 @@ public class BinarySearch {
 
         
     }
-
-
-
-    
 }
+
+//TC = O(logN)
+//SC = O(1)
